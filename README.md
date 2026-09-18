@@ -2,7 +2,7 @@
 
 ESTE RADAR ACOMPANHA AS PRINCIPAIS NOTICIAS ECONOMICAS/FINANCEIRAS, FOCANDO NO QUE REALMENTE IMPORTA
 
-Briefing de hoje: [URL do GitHub Pages]
+Briefing de hoje: https://thiagovitorello.github.io/agentes-curso/
 
 ## O que ele acompanha
 
