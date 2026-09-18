@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITULO}}</title>
+<style>
+  :root {
+    --fundo: #ffffff;
+    --texto: #1a1a1a;
+    --suave: #5c5c5c;
+    --linha: #e2e2e2;
+    --link: #0b5fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #14161a;
+      --texto: #eceef2;
+      --suave: #9aa0aa;
+      --linha: #2b2f36;
+      --link: #7aa7ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--fundo);
+    color: var(--texto);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 40px 16px 64px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .data { color: var(--suave); font-size: 0.9rem; margin: 0 0 32px; }
+  h2 { font-size: 1.05rem; margin: 32px 0 6px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  a { color: var(--link); }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  .anteriores {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--linha);
+  }
+  .anteriores h2 { margin-top: 0; font-size: 0.95rem; color: var(--suave); }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--linha);
+    color: var(--suave);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>{{TITULO}}</h1>
+  <p class="data">{{DATA}}</p>
+
+  {{BRIEFING}}
+
+  <section class="anteriores">
+    <h2>Dias anteriores</h2>
+    {{ANTERIORES}}
+  </section>
+
+  <footer>
+    Radar gerado automaticamente. Toda afirmação carrega o link da fonte.
+    Este briefing não é recomendação de investimento.
+  </footer>
+
+</main>
+</body>
+</html>
