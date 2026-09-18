@@ -1,0 +1,59 @@
+# Segredos — nunca sobem
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+*.crt
+credenciais*
+credentials*
+segredo*
+secrets*
+*secret*
+token*
+*.token
+senha*
+chaves/
+.claude/settings.local.json
+
+# Anotações pessoais
+anotacoes/
+anotações/
+notas/
+privado/
+pessoal/
+rascunho*
+*.pessoal.md
+*.privado.md
+
+# Windows e OneDrive
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*-Conflito*
+*conflicted copy*
+
+# macOS e Linux
+.DS_Store
+*~
+
+# Temporários e logs
+*.tmp
+*.temp
+*.bak
+*.old
+*.log
+logs/
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Dependências
+node_modules/
+__pycache__/
+venv/
+.venv/
